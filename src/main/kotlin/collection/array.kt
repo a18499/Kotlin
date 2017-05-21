@@ -1,7 +1,7 @@
 package collection
 
 /**
- * Created by a1849 on 2017/5/20.
+ * Created by user on 2017/5/21.
  */
 
 fun main(args: Array<String>) {
