@@ -16,4 +16,5 @@ fun main(args: Array<String>) {
     for (String  in arraylist){
         println(String)
     }
+
 }
