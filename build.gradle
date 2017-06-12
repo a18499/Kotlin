@@ -13,10 +13,22 @@ buildscript {
 }
 
 apply plugin: 'kotlin'
+apply plugin: 'application'
+
+
 
 repositories {
     mavenCentral()
 }
+
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'data.DataKt'
+    }
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+}
+
 
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
